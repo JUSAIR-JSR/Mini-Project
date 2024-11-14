@@ -1,0 +1,27 @@
+
+
+{% load static tailwind_tags %}
+<head>
+  {% tailwind_css %}
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+    * {
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    }
+    div{
+        display: flex;
+    }
+    </style>
+</head>
+<body>
+<div> {% include 'navbar.html' %} </div>
+<div>
+{% block content %}
+{% include 'section2.html' %}
+{% endblock content %}
+</div>
+</body>

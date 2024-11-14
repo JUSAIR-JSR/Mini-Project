@@ -1,0 +1,51 @@
+{% extends 'home.html' %}
+<!-- 
+{% load static tailwind_tags %}
+<head>
+  {% tailwind_css %}
+  </head>
+{% load static %} -->
+{% block content %}
+
+<section class="w-64 h-screen grid justify-center items-center">
+    <div class="mt-4 flexbox justify-center items-center">
+        <nav>
+            <div class="mb-6 flex justify-center">
+                <img height="20" src="{% static 'parts/GoMeal.black.png' %}" alt="">
+            </div>
+            <div class="flex justify-center">
+                <img height="100" src="{% static 'parts/dashboard.png' %}" alt="">
+            </div>
+            <ul class="grid gap-6 ml-6">
+                <div class="flex items-center gap-4">
+                    <img width="30" height="30" src="{% static 'parts/Delivery Scooter.png' %}" alt="">
+                    <span class="text-gray-500">Food Order</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img width="30" height="30" src="{% static 'parts/Review.png' %}" alt="">
+                    <span class="text-gray-500">Favorite</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img width="30" height="30" src="{% static 'parts/Order Discussion.png' %}" alt="">
+                    <span class="text-gray-500">Message</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img width="30" height="30" src="{% static 'parts/24 Hour Food Delivery.png' %}" alt="">
+                    <span class="text-gray-500">Order History</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img width="30" height="30" src="{% static 'parts/Bill.png' %}" alt="">
+                    <span class="text-gray-500">Bills</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img width="30" height="30" src="{% static 'parts/Setting.png' %}" alt="">
+                    <span class="text-gray-500">Setting</span>
+                </div>
+            </ul>
+            <div class="flex justify-center mt-6">
+                <img height="180" width="170" src="{% static 'parts/banner (1).png' %}" alt="">
+            </div>
+        </nav>
+    </div>
+</section>
+{% endblock content %}

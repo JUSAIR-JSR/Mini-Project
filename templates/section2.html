@@ -1,0 +1,117 @@
+{% extends 'home.html' %}
+<!-- {% load static tailwind_tags %}
+<head>
+  {% tailwind_css %}
+  </head>
+{% load static %} -->
+{% block content %}
+
+<section class="sec2 bg-gray-200 w-[950px] h-[1200px] grid justify-center">
+    <div class="container2 w-[850px] flexbox">
+        <div class="flex justify-between items-center h-12">
+            <div class="flex text-2xl font-bold">
+                <h1>Hello,</h1>
+                <h1>Patricia</h1>
+            </div>
+            <div class="relative">
+                <span class="absolute left-4 top-1.5">
+                    <img src="{% static 'parts/magnifier.png' %}" alt="" class="w-6 h-6">
+                </span>
+                <input type="search" placeholder="What do you want to eat today..." class="outline-none border-none w-[350px] h-[30px] rounded-full text-center">
+            </div>
+        </div>
+        <div class="banner flex items-center h-44 mt-1">
+            <img src="{% static 'parts/banner.png' %}" alt="" class="w-full h-44">
+        </div>
+        <div class="category grid mt-2.5">
+            <div class="category-name flex justify-between mt-4 mb-4">
+                <h4 class="text-gray-800 text-xl font-semibold">Category</h4>
+                <a href="#" class="no-underline"><p class="text-yellow-500 text-sm">View all &gt;</p></a>
+            </div>
+            <div class="category-items flex justify-evenly h-24 mt-1.5">
+                <a href="#"><img src="{% static 'parts/01.png' %}" alt="" class="w-24 h-24"></a>
+                <a href="#"><img src="{% static 'parts/02.png' %}" alt="" class="w-24 h-24"></a>
+                <a href="#"><img src="{% static 'parts/03.png' %}" alt="" class="w-24 h-24"></a>
+                <a href="#"><img src="{% static 'parts/04.png' %}" alt="" class="w-24 h-24"></a>
+                <a href="#"><img src="{% static 'parts/05.png' %}" alt="" class="w-24 h-24"></a>
+                <a href="#"><img src="{% static 'parts/06.png' %}" alt="" class="w-24 h-24"></a>
+            </div>
+        </div>
+        <div class="popular-dishes grid mt-2.5">
+            <div class="popular-dishes-name flex justify-between mt-4">
+                <h3 class="text-gray-800 text-xl font-semibold">Popular Dishes</h3>
+                <a href="#" class="no-underline"><p class="text-yellow-500 text-sm">View all &gt;</p></a>
+            </div>
+            <div class="popular-dishes-items flex justify-evenly mt-5">
+                <!-- popular-dishes 01 -->
+                <div class="popular-dishes-card h-72 w-64 bg-white rounded-lg">
+                    <div class="popular-dishes-head flex justify-between mt-5">
+                        <div class="popular-dishes-head-offer">
+                            <img src="{% static 'parts/ribbon.png' %}" alt="" class="w-16">
+                        </div>
+                        <div class="popular-dishes-head-like mr-5">
+                            <img src="{% static 'parts/Love.svg' %}" alt="" class="w-6">
+                        </div>
+                    </div>
+                    <div class="popular-dishes-img flex justify-center w-64 h-40 mt-4">
+                        <img src="{% static 'parts/image.png' %}" alt="" class="w-48 h-40 object-contain">
+                    </div>
+                    <div class="popular-dishes-details mb-6">
+                        <div class="popular-dishes-star ml-5">
+                            <img src="{% static 'parts/rate.png' %}" alt="" class="w-24">
+                        </div>
+                        <div class="popular-dishes-detail flex justify-between mb-4">
+                            <div class="popular-dishes-detail-name grid ml-5 font-sans">
+                                <p>Fish Burger</p>
+                                <div class="popular-dishes-detail-name-price flex font-bold gap-1">
+                                    <p class="text-yellow-500">$</p>
+                                    <p>5.59</p>
+                                </div>
+                            </div>
+                            <div class="popular-dishes-detail-button mr-5">
+                                <a href="#"><img src="{% static 'parts/button.png' %}" alt="" class="w-9"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other popular-dishes cards -->
+            </div>
+        </div>
+        <div class="recent-order grid mt-2.5">
+            <div class="popular-dishes-name flex justify-between mt-4">
+                <h3 class="text-gray-800 text-xl font-semibold">Recent Order</h3>
+                <a href="#" class="no-underline"><p class="text-yellow-500 text-sm">View all &gt;</p></a>
+            </div>
+            <div class="recent-order-items flex justify-evenly mb-12 mt-6">
+                <!-- recent-order-item-01 -->
+                <div class="recent-order-card h-64 w-60 bg-white rounded-lg">
+                    <div class="recent-order-head flex justify-end mt-5 mr-5">
+                        <img src="{% static 'parts/Love-1.svg' %}" alt="" class="w-6">
+                    </div>
+                    <div class="recent-order-img flex justify-center w-60 h-32">
+                        <img src="{% static 'parts/pizza-2021-08-26-17-02-26-utc.png' %}" alt="" class="w-48 h-32 object-contain">
+                    </div>
+                    <div class="recent-order-detail mt-4 font-sans">
+                        <div class="recent-order-detail-name flex justify-center text-sm mb-1">
+                            <p>Pepperoni Pizza</p>
+                        </div>
+                        <div class="recent-order-detail-price flex justify-center mb-1 font-semibold">
+                            <p class="text-yellow-500 mr-1">$</p>
+                            <p>5.59</p>
+                        </div>
+                        <div class="recent-order-detail-duration flex justify-center text-xs text-gray-500">
+                            <p>4.97 km</p>
+                            <p class="mx-1">-</p>
+                            <p>21 min</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other recent-order cards -->
+            </div>
+        </div>
+                    
+    </div>
+  </section>
+
+
+{% endblock content %}
